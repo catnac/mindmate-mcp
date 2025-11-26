@@ -1,0 +1,113 @@
+MindMate MCP Server – “Your Mindful Companion”
+
+MindMate is a lightweight AI-powered wellness companion designed to help users reduce stress, prevent burnout, and practice daily mindfulness.
+It provides short, supportive responses such as motivational quotes, relaxation tips, and reflection prompts.
+
+This project is implemented as an MCP (Model Context Protocol) server, making its tools accessible to compatible AI clients such as Claude Desktop.
+
+#Project Overview
+
+MindMate supports three core well-being functions:
+
+1-Motivational Quotes
+
+Returns an uplifting quote depending on the user’s emotional state.
+Example → "stressed" → returns an anti-stress motivational quote.
+
+2-Mindfulness Activities
+
+Suggests a quick, practical relaxation activity such as breathing, grounding, or stretching.
+
+3-Daily Reflection Prompt
+
+Provides a short gratitude or self-awareness question to promote mindful habits.
+
+All content is sourced from local JSON files. No external APIs are required.
+
+📁 Project Structure
+mindmate-mcp/
+│
+├── mcp_server/
+│   ├── app.py
+│   ├── Dockerfile
+│   ├── requirements.txt
+│   ├── data/
+│   │   ├── quotes.json
+│   │   ├── activities.json
+│   │   └── prompts.json
+│   └── schemas.py
+│
+└── README.md
+
+⚙️ Running Locally with Docker
+1️⃣ Build the Docker image
+
+Inside the mcp_server directory:
+
+docker build --no-cache -t mindmate-mcp:local .
+
+2️⃣ Run the image
+docker run --rm -p 8000:8000 mindmate-mcp:local
+
+
+Expected logs:
+
+INFO: Application startup complete.
+INFO: Uvicorn running on http://0.0.0.0:8000
+
+
+Stop with CTRL + C.
+
+☁️ (Optional) Push Image to Docker Hub
+docker tag mindmate-mcp:local nakata3/mindmate-mcp:latest
+docker push nakata3/mindmate-mcp:latest
+
+
+Replace nakata3 with your own DockerHub username.
+
+🧩 MCP Tools
+getMotivationalQuote(emotion: str) → dict
+
+Returns a quote matching the emotional category.
+
+suggestMindfulnessActivity(emotion: str) → dict
+
+Suggests a mindfulness activity.
+
+dailyReflectionPrompt() → dict
+
+Returns a daily reflection / gratitude prompt.
+
+💻 Claude Desktop Integration
+Using Docker
+
+Place under:
+
+Windows: %APPDATA%\Claude\claude_desktop_config.json
+
+macOS: ~/Library/Application Support/Claude/claude_desktop_config.json
+
+{
+  "mcpServers": {
+    "mindmate": {
+      "command": "docker",
+      "args": [
+        "run",
+        "--rm",
+        "nakata3/mindmate-mcp:latest"
+      ]
+    }
+  }
+}
+
+Using Python directly
+{
+  "mcpServers": {
+    "mindmate": {
+      "command": "python",
+      "args": [
+        "C:/path/to/mindmate-mcp/mcp_server/app.py"
+      ]
+    }
+  }
+}

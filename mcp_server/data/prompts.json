@@ -1,0 +1,14 @@
+[
+  {
+    "type": "gratitude",
+    "prompt": "What is one small thing you are grateful for today?"
+  },
+  {
+    "type": "focus",
+    "prompt": "What is one thing you can do in the next 10 minutes to make your day 1% better?"
+  },
+  {
+    "type": "reflection",
+    "prompt": "What is something you handled better today than last week?"
+  }
+]
