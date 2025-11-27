@@ -27,16 +27,27 @@ All content is sourced from local JSON files. No external APIs are required.
 📁 Project Structure
 mindmate-mcp/
 │
+
 ├── mcp_server/
+
 │   ├── app.py
+
 │   ├── Dockerfile
+
 │   ├── requirements.txt
+
 │   ├── data/
+
 │   │   ├── quotes.json
+
 │   │   ├── activities.json
+
 │   │   └── prompts.json
+
 │   └── schemas.py
+
 │
+
 └── README.md
 
 ⚙️ Running Locally with Docker
