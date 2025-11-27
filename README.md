@@ -129,3 +129,6 @@ Designed the overall MindMate concept and implemented the MCP server (tools, JSO
 
 Tiziano Visconti – Data & Content Designer
 Created and curated the wellness content in quotes.json, activities.json, and prompts.json, including emotion categories and tone.
+
+Laudecene Sippel Lemos – Claude Integration
+Configured MindMate as a local MCP server in Claude Desktop, and validated end-to-end flows.
