@@ -132,3 +132,6 @@ Created and curated the wellness content in quotes.json, activities.json, and pr
 
 Laudecene Sippel Lemos – Claude Integration
 Configured MindMate as a local MCP server in Claude Desktop, and validated end-to-end flows.
+
+Jeanne Voisard - Tester
+Tested Claude tool calls from the chat interface on the local environment.
