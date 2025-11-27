@@ -70,11 +70,11 @@ INFO: Uvicorn running on http://0.0.0.0:8000
 Stop with CTRL + C.
 
 ☁️ (Optional) Push Image to Docker Hub
-docker tag mindmate-mcp:local nakata3/mindmate-mcp:latest
-docker push nakata3/mindmate-mcp:latest
+docker tag mindmate-mcp:local DOCKERUSERNAME/mindmate-mcp:latest
+docker push DOCKERUSERNAME/mindmate-mcp:latest
 
 
-Replace nakata3 with your own DockerHub username.
+Replace DOCKERUSERNAME with your own DockerHub username.
 
 🧩 MCP Tools
 getMotivationalQuote(emotion: str) → dict
@@ -105,7 +105,7 @@ macOS: ~/Library/Application Support/Claude/claude_desktop_config.json
       "args": [
         "run",
         "--rm",
-        "nakata3/mindmate-mcp:latest"
+        "DOCKERUSERNAME/mindmate-mcp:latest"
       ]
     }
   }
