@@ -122,3 +122,7 @@ Using Python directly
     }
   }
 }
+
+
+Can Atakan – MCP Developer
+Designed the overall MindMate concept and implemented the MCP server (tools, JSON loading, core logic). Set up containerization (Dockerfile, requirements), built and pushed the Docker image to Docker Hub, and verified container execution.
