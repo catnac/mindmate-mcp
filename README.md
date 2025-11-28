@@ -24,7 +24,7 @@ Provides a short gratitude or self-awareness question to promote mindful habits.
 
 All content is sourced from local JSON files. No external APIs are required.
 
-📁 Project Structure
+#Project Structure
 mindmate-mcp/
 │
 
@@ -50,14 +50,14 @@ mindmate-mcp/
 
 └── README.md
 
-⚙️ Running Locally with Docker
-1️⃣ Build the Docker image
+Running Locally with Docker
+1-Build the Docker image
 
 Inside the mcp_server directory:
 
 docker build --no-cache -t mindmate-mcp:local .
 
-2️⃣ Run the image
+2-Run the image
 docker run --rm -p 8000:8000 mindmate-mcp:local
 
 
@@ -69,14 +69,14 @@ INFO: Uvicorn running on http://0.0.0.0:8000
 
 Stop with CTRL + C.
 
-☁️ (Optional) Push Image to Docker Hub
+#(Optional) Push Image to Docker Hub
 docker tag mindmate-mcp:local DOCKERUSERNAME/mindmate-mcp:latest
 docker push DOCKERUSERNAME/mindmate-mcp:latest
 
 
 Replace DOCKERUSERNAME with your own DockerHub username.
 
-🧩 MCP Tools
+#MCP Tools
 getMotivationalQuote(emotion: str) → dict
 
 Returns a quote matching the emotional category.
