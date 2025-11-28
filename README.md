@@ -149,3 +149,8 @@ Jeanne Voisard - Tester
 -
 
 Tested Claude tool calls from the chat interface on the local environment.
+
+Daria Chaiun – Documentation & Reporting
+-
+
+ Wrote and structured the README and project documentation, including setup steps, usage instructions, and team role descriptions.
