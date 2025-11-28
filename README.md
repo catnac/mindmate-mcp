@@ -125,12 +125,20 @@ Using Python directly
 
 Team Roles
 
-| Team Member            | Role          | Main Contributions |
 
-| Can Atakan             | MCP Developer | Designed the overall MindMate concept and implemented the MCP server (tools, JSON loading, core logic). Set up containerization (Dockerfile, requirements), built and pushed the Docker image to Docker Hub, and verified container execution.
 
-| Tiziano Visconti       | Data & Content Designer | Created and curated the wellness content in quotes.json, activities.json, and prompts.json, including emotion categories and tone.
+Can Atakan - MCP Developer
 
-| Laudecene Sippel Lemos | Claude Integration | Configured MindMate as a local MCP server in Claude Desktop, and validated end-to-end flows.
+Designed the overall MindMate concept and implemented the MCP server (tools, JSON loading, core logic). Set up containerization (Dockerfile, requirements), built and pushed the Docker image to Docker Hub, and verified container execution.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Tiziano Visconti - Data & Content Designer
 
-| Jeanne Voisard         | Tester | Tested Claude tool calls from the chat interface on the local environment.
+Created and curated the wellness content in quotes.json, activities.json, and prompts.json, including emotion categories and tone.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Laudecene Sippel Lemos - Claude Integration
+
+Configured MindMate as a local MCP server in Claude Desktop, and validated end-to-end flows.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Jeanne Voisard - Tester
+
+Tested Claude tool calls from the chat interface on the local environment.
