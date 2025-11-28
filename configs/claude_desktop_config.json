@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "mindmate": {
+      "command": "docker",
+      "args": [
+        "run",
+        "--rm",
+        "-i",
+        "yourdockername/mindmate-mcp:latest"
+      ]
+    }
+  }
+}
