@@ -1,14 +1,14 @@
 [
   {
     "type": "gratitude",
-    "prompt": "What is one small thing you are grateful for today?"
+    "prompt": "What is one small thing you are grateful for today? Who is someone you appreciate, and why?"
   },
   {
     "type": "focus",
-    "prompt": "What is one thing you can do in the next 10 minutes to make your day 1% better?"
+    "prompt": "What is one thing you can do in the next 10 minutes to make your day 1% better? What is the most important task you want to complete today?"
   },
   {
     "type": "reflection",
-    "prompt": "What is something you handled better today than last week?"
+    "prompt": "What is something you handled better today than last week? What is one moment from today that you're proud of?"
   }
 ]
