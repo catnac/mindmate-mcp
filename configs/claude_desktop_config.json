@@ -6,8 +6,9 @@
         "run",
         "--rm",
         "-i",
-        "yourdockername/mindmate-mcp:latest"
+        "nakata3/mindmate-mcp:latest"
       ]
     }
   }
 }
+
