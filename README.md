@@ -24,6 +24,39 @@ Provides a short gratitude or self-awareness question to promote mindful habits.
 
 All content is sourced from local JSON files. No external APIs are required.
 
+# Architecture
+
+The MindMate MCP server consists of the following main components:
+
+- Claude Desktop as the MCP client
+- A Docker container running the MindMate MCP server (FastMCP + Python)
+- Three MCP tools implemented in `app.py`
+- Local JSON files used as the content source
+
+```mermaid
+flowchart TD
+    U[User] --> C[Claude Desktop<br/>(MCP Client)]
+    C -->|MCP over STDIO| S[(Docker Container<br/>MindMate MCP Server)]
+
+    subgraph Server[MindMate MCP Server (app.py)]
+        T1[getMotivationalQuote]
+        T2[suggestMindfulnessActivity]
+        T3[dailyReflectionPrompt]
+
+        D1[(quotes.json)]
+        D2[(activities.json)]
+        D3[(prompts.json)]
+    end
+
+    S --> T1
+    S --> T2
+    S --> T3
+
+    T1 --> D1
+    T2 --> D2
+    T3 --> D3
+
+
 #Project Structure
 mindmate-mcp/
 │
