@@ -24,4 +24,4 @@ def getMotivationalQuote(input_data: UserEmotion) -> dict:
     return {"quote": random.choice(matches)["quote"]}
 
 if __name__ == "__main__":
-    app.run()   # ❗ STDIO üzerinden çalışır, Uvicorn yok
+    app.run()   #  works on STDIO, there is no Uvicorn 
