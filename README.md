@@ -74,7 +74,7 @@ docker tag mindmate-mcp:local DOCKERUSERNAME/mindmate-mcp:latest
 docker push DOCKERUSERNAME/mindmate-mcp:latest
 
 
-Replace DOCKERUSERNAME with your own DockerHub username.
+Replace nakata3 with your own DockerHub username.
 
 #MCP Tools
 getMotivationalQuote(emotion: str) → dict
