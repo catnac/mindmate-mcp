@@ -33,7 +33,7 @@ The MindMate MCP server consists of the following main components:
 - Three MCP tools implemented in `app.py`
 - Local JSON files used as the content source
 
-```mermaid
+
 flowchart TD
     U[User] --> C[Claude Desktop<br/>(MCP Client)]
     C -->|MCP over STDIO| S[(Docker Container<br/>MindMate MCP Server)]
